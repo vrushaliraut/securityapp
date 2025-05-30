@@ -12,3 +12,7 @@ spring:
   sql:
     init:
       mode: always                          # 👈 Crucial
+  jwt:
+    secret: my-test-jwt-secret  # Keep this secret in environment variables in production!
+    # YmFzZTY0LWVuY29kZWQtZG92LXNlY3JldC1rZXktZm9yLXRlc3RzIQ== base 64 token 
+    expiration: 900000 # 15 minutes in ms
